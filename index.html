@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Module 6 Test - Harsh Tomar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">Registration Form</div>
+        <form action="#">
+            <div class="user__details">
+                <div class="input__box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="E.g: Harsh" id="first-name" required>
+                    <p id="fn-out">Look's Good</p>
+                </div>
+                <div class="input__box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Tomar" id="last-name" required>
+                    <p id="ln-out">Look's Good</p>
+                </div>
+                <div class="input__box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="getyouremail@hotmail.com" id="email" required>
+                    <p id="email-out">Look's Good</p>
+                </div>
+                <div class="input__box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" pattern="[0-9]{10}" placeholder="012-345-6789" id="mobile-number" required>
+                    <p id="mob-out">Look's Good</p>
+                </div>
+                <div class="input__box">
+                    <span class="details">Batch Number</span>
+                    <select aria-label="label for the select" id="form-select" name="Batch Number">
+                        <option value="None">Select Batch No...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </select>
+                    <p id="batch-out">Look's Good</p>
+                </div>
+                <div class="input__box">
+                    <span class="details">Current Module</span>
+                    <select aria-label="label for the select" id="module-select" name="Module Number">
+                        <option value="None">Select Current Module...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <p id="module-out">Look's Good</p>
+                </div>
+
+            </div>
+            <div class="gender__details">
+                <input type="checkbox" name="gender" id="dot-1">
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span>Agree to terms & conditions.</span>
+                    </label>
+                    
+
+                </div>
+                <p id="check-out">Look's Good</p>
+            </div>
+            <div class="button">
+                <input type="button" value="Register" onclick="validate()">
+            </div>
+        </form>
+    </div> 
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
